@@ -1,0 +1,167 @@
+/*
+#0D0221 Rich Black
+#0F084B Middle Red Purple
+#4D5061 Independence
+#A6CFD5 Pastel Blue
+#C2E7D9 Columbia Blue
+*/
+
+/* Global Styles
+-----------------------------*/
+html {
+  box-sizing: border-box;
+  font-size: 2vw;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+    font-family: 'farsan', serif;
+    font-size: 1.25rem;
+    margin: 0;
+}
+a {
+    color: #C2E7D9;
+    transition: all 0.5s ease-out 0.5s;
+}
+a:hover {
+    text-decoration: none;
+    color: #4D5061;
+}
+h1 {
+    font-size: 2.1875rem;
+    font-weight: 700;
+    margin-top: 0;
+}
+h2 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-top: 0;
+}
+h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 60px 50px;
+    overflow: auto;
+}
+
+.icon {
+    text-decoration: none;
+    color : white;
+    background: red;
+    padding: 10px;
+    display: inline-block;
+}
+/* Header and Footer
+-----------------------------*/
+header {
+    padding-top: 50px;
+    position: relative;
+}
+header, footer {
+    background: #0D0221;
+    color: #A6CFD5;
+    font-family: 'Righteous', serif;
+}
+header {
+    text-align: center;
+}
+.profile-img {
+    border-radius: 50%;
+}
+.download{
+    position: absolute;
+    bottom: 0;
+    right : 0;
+}
+header h1, header h2 {
+    margin: 0;
+}
+footer {
+    text-align: center;
+}
+.contact-info {
+    padding: 10px;
+    display: inline-block;
+}
+/* Navigation
+-----------------------------*/
+nav {
+    text-align: center;
+    background: #0F084B;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    
+}
+nav a {
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700; 
+    transition: all 2sec ease-out 1sec;
+}
+
+/* Work Exprience
+-----------------------------*/
+.work {
+    background: linear-gradient(rgba(15,8,75,0.8),rgba(15,8,75,0.5)),url(https://s3-us-west-1.amazonaws.com/lcaveh/Images/wseattle@2x.jpg) no-repeat fixed;
+    background-size : cover;
+    color: #A6CFD5;
+}
+h3 ~ p{
+    margin: 0;
+}
+
+/* Education
+-----------------------------*/
+.education {
+    background: linear-gradient(rgba(77,80,97,0.8),rgba(77,80,97,0.5)),url(https://s3-us-west-1.amazonaws.com/lcaveh/Images/education@2x.jpg) no-repeat fixed;
+    background-size : cover;
+    color: #A6CFD5;
+}
+
+/* Media Queries
+-----------------------------*/
+@media (min-width : 900px) {
+    .narrowcol {
+        width: 30%;
+        float: left;
+        min-height: 175px;
+    }
+    .widecol {
+        width: 70%;
+        float: left;
+        padding-left: 20px;
+        min-height: 175px;
+    }   
+}
+@media (max-width : 899px) {
+   
+    .profile-img {
+        width: 150px; 
+    }
+
+}
+@media only screen 
+   
+  and (max-device-width: 736px) 
+   {
+    .work {
+    background: linear-gradient(rgba(15,8,75,0.8),rgba(15,8,75,0.5)),url(https://s3-us-west-1.amazonaws.com/lcaveh/Images/wseattle.jpg) no-repeat fixed;
+    background-size : cover;
+    color: #A6CFD5;
+    }
+    .education {
+    background: linear-gradient(rgba(77,80,97,0.8),rgba(77,80,97,0.5)),url(https://s3-us-west-1.amazonaws.com/lcaveh/Images/education.jpg) no-repeat fixed;
+    background-size : cover;
+    color: #A6CFD5;
+    }
+    
+}
